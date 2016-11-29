@@ -110,6 +110,12 @@ atom-text-editor, :host {
   }
 }
 
+.constant {
+  &.numeric{
+    color: @power-blue;
+  }
+}
+
 .entity {
   &.name.class {
     text-decoration: none;
@@ -118,6 +124,7 @@ atom-text-editor, :host {
 
   &.name.function {
     color: @green;
+    font-style: bold;
   }
 
   &.name.instance {
@@ -129,13 +136,14 @@ atom-text-editor, :host {
   }
 
   &.other.attribute-name {
+    font-style: bold;
     color: @green;
   }
 
   &.other.inherited-class {
     font-style: italic;
     text-decoration: none;
-    color: @green;
+    color: @light-orange;
   }
 }
 
@@ -166,7 +174,7 @@ atom-text-editor, :host {
 }
 
 .string {
-  color: @yellow;
+  color: @yellow-soft;
 }
 
 .support {
